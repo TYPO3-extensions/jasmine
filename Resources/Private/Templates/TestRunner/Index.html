@@ -1,0 +1,29 @@
+{namespace e=Tx_Jasmine_ViewHelpers}
+{f:layout(name:'Default')}
+<f:section name="main">
+	<f:if condition="{extensionList}">
+		<f:form action="index" method="get" class="selectionForm">
+
+			<input type="hidden" name="M" value="{M}" />
+
+			<div class="jasmine-form-row">
+				<label>Extension to test:</label>
+				<e:form.select name="extensionKey" optionLabelField="name" optionValueField="extensionKey" options="{extensionList}" value="{arguments.extensionKey}" />
+			</div>
+
+			<div class="jasmine-form-row">
+				<f:form.submit value="Run" />
+			</div>
+
+		</f:form>
+
+		<f:if condition="{execute}">
+			<script type="text/javascript">
+				jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+				jasmine.getEnv().execute();
+
+				console.log(jasmine.getEnv());
+			</script>
+		</f:if>
+	</f:if>
+</f:section>

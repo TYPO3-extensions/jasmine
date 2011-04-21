@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Jasmine BDD extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="jasmine_bdd">Jasmine: BDD for JavaScript</label>
+			<label index="menu_testrunner">Test Runner</label>
+			<label index="menu_about">About Jasmine</label>
+			<label index="all_extensions">All extensions</label>
+		</languageKey>
+	</data>
+</T3locallang>

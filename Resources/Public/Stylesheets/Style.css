@@ -1,0 +1,30 @@
+#tx_jasmine_body {
+	padding: 15px 10px;
+}
+
+img.tx_jasmine_logo {
+	float: right;
+	margin: 0px 30px 10px;
+}
+
+div.docheader-row2-right img {
+	float: left;
+	margin-right: 5px;
+}
+
+div.jasmine-form-row {
+	clear: both;
+}
+
+div.jasmine-form-row label {
+	float: left;
+	width: 150px;
+}
+
+div.jasmine-form-row input[type=submit] {
+	margin: 10px 0px 5px 150px;
+}
+
+div.typo3-fullDoc {
+	height: 130px;
+}

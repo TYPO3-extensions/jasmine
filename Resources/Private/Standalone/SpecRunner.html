@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Jasmine Test Runner</title>
+		<link rel="stylesheet" type="text/css" href="../../{extPath}Resources/Public/Lib/jasmine/lib/jasmine-1.0.2/jasmine.css">
+		<script type="text/javascript" src="../../{extPath}Resources/Public/Lib/jasmine/lib/jasmine-1.0.2/jasmine.js"></script>
+		<script type="text/javascript" src="../../{extPath}Resources/Public/Lib/jasmine/lib/jasmine-1.0.2/jasmine-html.js"></script>
+
+		<f:for each="{includes}" as="include">
+			<script type="text/javascript" src="../../{include}"></script>
+		</f:for>
+		<f:for each="{specs}" as="spec">
+			<script type="text/javascript" src="../../{spec}"></script>
+		</f:for>
+
+	</head>
+	<body>
+
+	<script type="text/javascript">
+		jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+		jasmine.getEnv().execute();
+	</script>
+
+	</body>
+</html>

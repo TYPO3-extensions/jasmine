@@ -1,0 +1,30 @@
+{namespace e=Tx_Jasmine_ViewHelpers}
+<e:be.configuration loadHtmlSpecRunner="{loadHtmlSpecRunner}" extKey="{extKey}" />
+
+<f:be.container loadPrototype="false" pageTitle="Jasmine BDD">
+	<div class="typo3-fullDoc">
+		<div id="typo3-docheader">
+			<div id="typo3-docheader-row1">
+				<div class="buttonsleft"></div>
+				<div class="buttonsright"></div>
+			</div>
+			<div id="typo3-docheader-row2">
+				<div class="docheader-row2-left">
+					<f:be.menus.actionMenu>
+						<f:be.menus.actionMenuItem label="{f:translate(key:'menu_testrunner')}" controller="TestRunner" action="index" />
+						<f:be.menus.actionMenuItem label="{f:translate(key:'menu_about')}" controller="Index" action="index" />
+					</f:be.menus.actionMenu>
+				</div>
+				<div class="docheader-row2-right">
+					<a href="http://pivotal.github.com/jasmine/" target="_blank">
+						<img src="{f:uri.resource(path:'Images/jasmine_logo_small.png')}" alt="{f:translate(key:'jasmine_bdd')}" />
+						{f:translate(key:'jasmine_bdd')}
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="tx_jasmine_body">
+			<f:render section="main" />
+		</div>
+	</div>
+</f:be.container>
