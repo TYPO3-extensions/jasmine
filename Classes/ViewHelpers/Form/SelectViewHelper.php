@@ -29,7 +29,6 @@
  * @package     TYPO3
  * @subpackage  jasmine
  * @author      Rens Admiraal <r.admiraal@drecomm.nl>
- * @license     http://www.gnu.org/copyleft/gpl.html
  */
 class Tx_Jasmine_ViewHelpers_Form_SelectViewHelper extends Tx_Fluid_ViewHelpers_Form_SelectViewHelper {
 
