@@ -43,14 +43,12 @@ class Tx_Jasmine_ViewHelpers_Form_SelectViewHelper extends Tx_Fluid_ViewHelpers_
 		}
 		$options = array();
 
-		$optionsArgument = $this->arguments['options'];
-
-		foreach ($optionsArgument as $key => $value) {
-			if ($this->arguments->hasArgument('optionValueField')) {
+		foreach ($this->arguments['options'] as $key => $value) {
+			if (!empty($this->arguments['optionValueField'])) {
 				$key = $value[$this->arguments['optionValueField']];
 			}
 
-			if ($this->arguments->hasArgument('optionLabelField')) {
+			if (!empty($this->arguments['optionLabelField'])) {
 				$value = array(
 					'icon' => !empty($value['icon']) ? $value['icon'] : NULL,
 					'label' => $value[$this->arguments['optionLabelField']]
