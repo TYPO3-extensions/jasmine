@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2009 Rens Admiraal <r.admiraal@drecomm.nl>
+*  (c) 2009 Rens Admiraal <rens.admiraal@typo3.org>
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -28,7 +28,7 @@
  * @category    Controller
  * @package     TYPO3
  * @subpackage  jasmine
- * @author      Rens Admiraal <r.admiraal@drecomm.nl>
+ * @author      Rens Admiraal <rens.admiraal@typo3.org>
  */
 class Tx_Jasmine_Controller_TestRunnerController extends Tx_Extbase_MVC_Controller_ActionController {
 
